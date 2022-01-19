@@ -1,0 +1,19 @@
+.bg-coral {
+  background-color: coral;
+}
+
+.bg-blue {
+  background-color: deepskyblue;
+}
+
+.bg-pink {
+  background-color: palevioletred;
+}
+
+.h-500 {
+  height: 500px;
+}
+
+.h-100vh {
+  height: 100vh;
+}

@@ -1,4 +1,8 @@
 .app-grid {
-  background-color: var(--color-blue);
-  color: var(--color-gray);
+  display: grid;
+  grid-template-rows: 48px 1fr 48px;
+}
+
+.app-grid__scrollarea {
+  overflow-y: auto;
 }
