@@ -1,11 +1,18 @@
 .question-card {
   position: relative;
+  border-color: var(--color-blue-jeans);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .question-card__bookmark {
   text-decoration: none;
+  background-color: transparent;
   position: absolute;
   top: -15px;
   right: 10px;
   z-index: 1;
+}
+
+.question-card__bookmark:hover {
+  opacity: 0.7;
 }

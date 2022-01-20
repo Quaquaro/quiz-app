@@ -1,10 +1,17 @@
+/* boder-radius */
 .rounded {
   border-radius: 0.25rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .rounded-full {
   border-radius: 9999px;
 }
+
+/* border-style */
 
 .border-solid {
   border-style: solid;
@@ -12,4 +19,14 @@
 
 .border-none {
   border-style: none;
+}
+
+/* border-width */
+
+.border {
+  border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
 }
