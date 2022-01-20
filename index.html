@@ -10,24 +10,24 @@
   <body class="app-grid">
     <h1 class="header headings">Quiz-App</h1>
     <main class="app-grid__scrollarea m-4">
-      <section class="question-card rounded border border-solid m-4">
-        Question:
+      <section class="question-card rounded border border-solid mx-4 my-12 p-3">
+        <h2 class="uppercase m-0">Question:</h2>
         <button class="question-card__bookmark border-none p-0">
           <img src="images/bookmark-empty.svg" alt="Bookmark" width="32" height="32" />
         </button>
         <p class="answer">Answer:</p>
         <button class="show">Show Answer</button>
       </section>
-      <section class="question-card rounded border border-solid m-4">
-        Question:
+      <section class="question-card rounded border border-solid mx-4 my-12 p-3">
+        <h2 class="uppercase m-0">Question:</h2>
         <button class="question-card__bookmark border-none p-0">
-          <img src="images/bookmark-empty.svg" alt="Bookmark" width="32" height="32" /></button
-        >>
+          <img src="images/bookmark-empty.svg" alt="Bookmark" width="32" height="32" />
+        </button>
         <p class="answer">Answer:</p>
         <button class="show">Show Answer</button>
       </section>
-      <section class="question-card rounded border border-solid m-4">
-        Question:
+      <section class="question-card rounded border border-solid mx-4 my-12 p-3">
+        <h2 class="uppercase m-0">Question:</h2>
         <button class="question-card__bookmark border-none p-0">
           <img src="images/bookmark-empty.svg" alt="Bookmark" width="32" height="32" />
         </button>
@@ -36,10 +36,16 @@
       </section>
     </main>
     <nav class="m-4 flex justify-evenly">
-      <a href="#" class="link">Home</a>
-      <a href="pages/bookmarks.html" class="link">Bookmarks</a>
-      <a href="pages/form.html" class="link">Create Questions</a>
-      <a href="pages/profile.html" class="link">Profile</a>
+      <a href="#" class="nav__link"><img src="./images/home.svg" alt="Gehe zur Startseite" height="32" width="32" /></a>
+      <a href="pages/bookmarks.html" class="nav__link"
+        ><img src="./images/bookmark-filled.svg" alt="Lesezeichen" width="32" height="32"
+      /></a>
+      <a href="pages/form.html" class="nav__link"
+        ><img src="./images/edit.svg" alt="Frage erstellen" height="32" width="32"
+      /></a>
+      <a href="pages/form.html" class="nav__link">
+        <img src="./images/avatar.svg" alt="zur Profilseite" height="32" width="32" />
+      </a>
     </nav>
   </body>
 </html>
