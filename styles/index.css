@@ -12,10 +12,10 @@
 @import "./utilities/typography.css";
 @import "./utilities/grid.css";
 
-
 @import "components/header.css";
 @import "components/headings.css";
 @import "./components/app-grid.css";
 @import "./components/question-card.css";
 @import "./components/footer.css";
 @import "./components/button.css";
+@import "./components/tag.css";

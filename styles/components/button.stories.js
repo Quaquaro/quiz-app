@@ -3,5 +3,5 @@ export default {
 };
 
 export const Default = () => `
-<button class="button">Hit This!</button>
+<button class="button">Klicken!</button>
 `;
