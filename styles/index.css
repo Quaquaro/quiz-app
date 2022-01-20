@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Chewy&family=Cookie&display=swap");
 @import "./colors.css";
+@import "./base.css";
+@import "./utility.css";
 @import "./utilities/spacing.css";
 @import "./utilities/flexbox.css";
 @import "./utilities/box-aligment.css";
@@ -10,9 +12,10 @@
 @import "./utilities/typography.css";
 @import "./utilities/grid.css";
 
-@import "./base.css";
-@import "./utility.css";
+
 @import "components/header.css";
 @import "components/headings.css";
 @import "./components/app-grid.css";
 @import "./components/question-card.css";
+@import "./components/footer.css";
+@import "./components/button.css";

@@ -11,6 +11,11 @@
   border-radius: 9999px;
 }
 
+.rounded-b-lg {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
 /* border-style */
 
 .border-solid {
