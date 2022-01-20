@@ -4,22 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/index.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+    <title>Create</title>
   </head>
-  <body>
-    <header class="header">
-      <h1 class="heading">QUIZ-APP</h1>
-    </header>
-    <main class="main">
-      <form class="form" autocomplete="off">
-        <label class="label" for="name-field">Name:</label>
-        <input id="name-field" class="input" type="text" requrired placeholder="Benutzername" />
-        <label
-          >E-Mail:
-          <input type="email" class="input" reqired placeholder="mail@mail.com" />
-        </label>
+  <body class="app-grid">
+    <h1 class="header headings">Create</h1>
+    <main class="app-grid__scrollarea m-4">
+      <form class="form flex flex-col" autocomplete="off">
+        <label class="label" for="add-question">Add Question</label>
+        <textarea name="" id="add-question" cols="30" rows="10"></textarea>
+        <label class="label" for="add-answer">Add Answer</label>
+        <textarea name="" id="add-answer" cols="30" rows="10"></textarea>
+        <label for="add-tags" class="label">Add Tags</label>
+        <input type="text" id="add-tags" />
+        <input type="submit" value="Submit" class="button" />
       </form>
     </main>
+    <nav class="m-4 flex justify-evenly">
+      <a href="../index.html" class="link">Home</a>
+      <a href="bookmarks.html" class="link">Bookmarks</a>
+      <a href="#" class="link">Create Questions</a>
+      <a href="profile.html" class="link">Profile</a>
+    </nav>
   </body>
 </html>

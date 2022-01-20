@@ -5,3 +5,11 @@
 .rounded-full {
   border-radius: 9999px;
 }
+
+.border-solid {
+  border-style: solid;
+}
+
+.border-none {
+  border-style: none;
+}

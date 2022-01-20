@@ -1,0 +1,11 @@
+.question-card {
+  position: relative;
+}
+
+.question-card__bookmark {
+  text-decoration: none;
+  position: absolute;
+  top: -15px;
+  right: 10px;
+  z-index: 1;
+}

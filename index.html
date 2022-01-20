@@ -7,9 +7,39 @@
     <link rel="stylesheet" href="/styles/index.css" />
     <title>QUIZ-APP</title>
   </head>
-  <body>
-    <header class="header">
-      <h1 class="heading">Quiz-App</h1>
-    </header>
+  <body class="app-grid">
+    <h1 class="header headings">Quiz-App</h1>
+    <main class="app-grid__scrollarea m-4">
+      <section class="question-card rounded border-solid m-4">
+        Question:
+        <button class="question-card__bookmark border-none p-0">
+          <img src="images/bookmark-empty.svg" alt="Bookmark" width="32" height="32" />
+        </button>
+        <p class="answer">Answer:</p>
+        <button class="show">Show Answer</button>
+      </section>
+      <section class="question-card rounded border-solid m-4">
+        Question:
+        <button class="question-card__bookmark border-none p-0">
+          <img src="images/bookmark-empty.svg" alt="Bookmark" width="32" height="32" /></button
+        >>
+        <p class="answer">Answer:</p>
+        <button class="show">Show Answer</button>
+      </section>
+      <section class="question-card rounded border-solid m-4">
+        Question:
+        <button class="question-card__bookmark border-none p-0">
+          <img src="images/bookmark-empty.svg" alt="Bookmark" width="32" height="32" />
+        </button>
+        <p class="answer">Answer:</p>
+        <button class="show">Show Answer</button>
+      </section>
+    </main>
+    <nav class="m-4 flex justify-evenly">
+      <a href="#" class="link">Home</a>
+      <a href="pages/bookmarks.html" class="link">Bookmarks</a>
+      <a href="pages/form.html" class="link">Create Questions</a>
+      <a href="pages/profile.html" class="link">Profile</a>
+    </nav>
   </body>
 </html>
