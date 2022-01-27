@@ -1,5 +1,5 @@
 export default {
-  title: "Components/Header",
+  title: 'Components/Header',
 };
 
 export const Default = () => `

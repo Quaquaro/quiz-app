@@ -1,15 +1,16 @@
-@import "./colors.css";
-@import "./base.css";
-@import "./utility.css";
-@import "./utilities/spacing.css";
-@import "./utilities/flexbox.css";
-@import "./utilities/box-aligment.css";
-@import "./utilities/spacing.css";
-@import "./utilities/borders.css";
-@import "./utilities/effects.css";
-@import "./utilities/transition-animation.css";
-@import "./utilities/typography.css";
-@import "./utilities/grid.css";
+@import './colors.css';
+@import './base.css';
+@import './utility.css';
+@import './utilities/spacing.css';
+@import './utilities/flexbox.css';
+@import './utilities/box-aligment.css';
+@import './utilities/spacing.css';
+@import './utilities/borders.css';
+@import './utilities/effects.css';
+@import './utilities/transition-animation.css';
+@import './utilities/typography.css';
+@import './utilities/grid.css';
+
 
 @import "components/header.css";
 @import "components/headings.css";
@@ -19,3 +20,4 @@
 @import "./components/button.css";
 @import "./components/tag.css";
 @import "./components/form.css";
+

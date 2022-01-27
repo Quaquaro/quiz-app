@@ -12,6 +12,7 @@ function getQuerySelectorAllJsData(jsDataValue) {
 
 //Set Bookmark
 
+
 const bookmarks = getQuerySelectorAllJsData('quiz');
 
 bookmarks.forEach((bookmark) => {
@@ -40,6 +41,7 @@ function addBookmark (){
 // });
 
 //Show Answers
+
 // const answerButton = document.querySelector(".button");
 // const answerText = document.querySelector(".answer--hidden");
 
@@ -77,4 +79,5 @@ textareaContentQuestion.addEventListener('keyup', () => {
   if (textlength > 200) {
     textareaContentQuestion.classList.add('form__textarea--red-border');
   }
+
 });

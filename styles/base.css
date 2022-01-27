@@ -3,22 +3,22 @@
 }
 
 body {
-  font-family: "museo_sans_cyrl700";
+  font-family: 'museo_sans_cyrl700';
   font-size: 112.5%;
   line-height: 1.5;
 }
 @font-face {
-  font-family: "museo700";
-  src: url("./fonts/museo700-regular-webfont.woff2") format("woff2"),
-    url("./fonts/museo700-regular-webfont.woff") format("woff");
+  font-family: 'museo700';
+  src: url('./fonts/museo700-regular-webfont.woff2') format('woff2'),
+    url('./fonts/museo700-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "museo_sans_cyrl700";
-  src: url("./fonts/museo_sans_cyrl_700-webfont.woff2") format("woff2"),
-    url("./fonts/museo_sans_cyrl_700-webfont.woff") format("woff");
+  font-family: 'museo_sans_cyrl700';
+  src: url('./fonts/museo_sans_cyrl_700-webfont.woff2') format('woff2'),
+    url('./fonts/museo_sans_cyrl_700-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
