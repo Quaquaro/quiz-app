@@ -1,5 +1,5 @@
 export default {
-  title: "Components/Question-card",
+  title: 'Components/Question-card',
 };
 
 export const Default = () => `

@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier:check": "npx prettier --check .",
+    "prettier:write": "npx prettier --write .",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -25,7 +27,7 @@
     "@storybook/addon-essentials": "^6.4.13",
     "@storybook/addon-links": "^6.4.13",
     "@storybook/html": "^6.4.13",
-    "babel-loader": "^8.2.3"
-  },
-  "dependencies": {}
+    "babel-loader": "^8.2.3",
+    "prettier": "2.5.1"
+  }
 }

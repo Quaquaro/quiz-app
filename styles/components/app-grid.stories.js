@@ -1,5 +1,5 @@
 export default {
-  title: "Components/App-grid",
+  title: 'Components/App-grid',
 };
 
 export const Default = () => `
