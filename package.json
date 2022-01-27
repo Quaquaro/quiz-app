@@ -4,7 +4,7 @@
   "description": "- HTML - CSS",
   "main": "index.js",
   "scripts": {
-    "test": "npm run prettier:write && npm run htmlhint",
+    "test": "npm run prettier:check && npm run htmlhint",
     "prettier:check": "npx prettier --check .",
     "prettier:write": "npx prettier --write .",
     "htmlhint": "npx htmlhint '**/*.html'",
@@ -32,6 +32,14 @@
     "babel-loader": "^8.2.3",
     "htmlhint": "^1.1.1",
     "husky": "^7.0.0",
+    "lint-staged": "^12.3.2",
     "prettier": "2.5.1"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,md,html,css}": "prettier --write"
+  },
+  "dependencies": {
+    "npm": "^8.3.2",
+    "stable": "^0.1.8"
   }
 }
