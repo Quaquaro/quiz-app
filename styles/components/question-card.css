@@ -2,13 +2,16 @@
   position: relative;
   background-color: var(--color-gray);
   border-color: var(--color-blue-jeans);
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
   color: var(--color-blue-jeans);
 }
 
 .question-card__bookmark {
   text-decoration: none;
   background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 50px 100px;
   position: absolute;
   cursor: pointer;
   top: -15px;

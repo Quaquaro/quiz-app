@@ -8,64 +8,183 @@
     <title>QUIZ-APP</title>
   </head>
   <body class="app-grid">
-    <h1 class="header headings">Quiz-App</h1>
+    <h1 class="header headings" data-js="headline">Quiz-App</h1>
     <main class="app-grid__scrollarea m-4">
-      <section class="question-card rounded border border-solid mx-4 my-12 p-3">
-        <h2 class="uppercase m-0">Question:</h2>
-        <p class="question-card__text"></p>
-        <button class="question-card__bookmark border-none p-0">
-          <img class="bookmark" src="images/bookmark-empty.svg" alt="Bookmark" width="32" height="32" />
-        </button>
-        <button class="button">Show Answer</button>
-        <p class="answer--hidden">Tag4</p>
-        <p class="flex flex-row flex-wrap">
-          <span class="tag p-3 mx-4">tag1</span> <span class="tag p-3 mx-4">tag2</span>
-          <span class="tag p-3 mx-4">tag3</span>
-          <span class="tag p-3 mx-4">tag4</span>
-        </p>
+      <section class="quiz" data-js="quiz">
+        <section
+          class="question-card rounded border border-solid mx-4 my-12 p-3"
+        >
+          <h2 class="uppercase m-0">Question:</h2>
+          <p class="question-card__text"></p>
+          <button class="question-card__bookmark border-none p-0">
+            <img class="bookmark" src="images/bookmark-empty.svg" alt="Bookmark" width="32" height="32" data-js="bookmark" />
+          </button>
+          <button class="button">Show Answer</button>
+          <p class="answer--hidden">Tag4</p>
+          <p class="flex flex-row flex-wrap">
+            <span class="tag p-3 mx-4">tag1</span>
+            <span class="tag p-3 mx-4">tag2</span>
+            <span class="tag p-3 mx-4">tag3</span>
+            <span class="tag p-3 mx-4">tag4</span>
+          </p>
+        </section>
+        <section
+          class="question-card rounded border border-solid mx-4 my-12 p-3"
+        >
+          <h2 class="uppercase m-0">Question:</h2>
+          <p class="question-card__text"></p>
+          <button class="question-card__bookmark border-none p-0">
+            <img
+              class="bookmark"
+              src="images/bookmark-empty.svg"
+              alt="Bookmark"
+              width="32"
+              height="32"
+            />
+          </button>
+          <button class="button">Show Answer</button>
+          <p class="answer">Answer:</p>
+          <p class="flex flex-row flex-wrap">
+            <span class="tag p-3 mx-4">tag1</span>
+            <span class="tag p-3 mx-4">tag2</span>
+            <span class="tag p-3 mx-4">tag3</span>
+            <span class="tag p-3 mx-4">tag4</span>
+          </p>
+        </section>
+        <section
+          class="question-card rounded border border-solid mx-4 my-12 p-3"
+        >
+          <h2 class="uppercase m-0">Question:</h2>
+          <p class="question-card__text"></p>
+          <button class="question-card__bookmark border-none p-0">
+            <img
+              class="bookmark"
+              src="images/bookmark-empty.svg"
+              alt="Bookmark"
+              width="32"
+              height="32"
+            />
+          </button>
+          <button class="button">Show Answer</button>
+          <p class="answer"></p>
+          <p class="flex flex-row flex-wrap justify-evenly">
+            <span class="tag p-3 mx-4">tag1</span>
+            <span class="tag p-3 mx-4">tag2</span>
+            <span class="tag p-3 mx-4">tag3</span>
+            <span class="tag p-3 mx-4">tag4</span>
+          </p>
+        </section>
       </section>
-      <section class="question-card rounded border border-solid mx-4 my-12 p-3">
-        <h2 class="uppercase m-0">Question:</h2>
-        <p class="question-card__text"></p>
-        <button class="question-card__bookmark border-none p-0">
-          <img src="images/bookmark-empty.svg" alt="Bookmark" width="32" height="32" />
-        </button>
-        <button class="button">Show Answer</button>
-        <p class="answer">Answer:</p>
-        <p class="flex flex-row flex-wrap">
-          <span class="tag p-3 mx-4">tag1</span> <span class="tag p-3 mx-4">tag2</span>
-          <span class="tag p-3 mx-4">tag3</span>
-          <span class="tag p-3 mx-4">tag4</span>
-        </p>
+      <!-- BOOKMARKS -->
+      <section class="bookmarks hidden" data-js="bookmarks">
+        <section class="question-card p-3">
+          Question:
+          <div class="question-card__bookmark border-none p-0"></div>
+          <p class="answer">Answer:</p>
+          <button class="show">Show Answer</button>
+        </section>
+        <section class="question-card p-3">
+          Question:
+          <div class="question-card__bookmark border-none p-0"></div>
+          <p class="answer">Answer:</p>
+          <button class="show">Show Answer</button>
+        </section>
+        <section class="question-card p-3">
+          Question:
+          <div class="question-card__bookmark border-none p-0"></div>
+          <p class="answer">Answer:</p>
+          <button class="show">Show Answer</button>
+        </section>
       </section>
-      <section class="question-card rounded border border-solid mx-4 my-12 p-3">
-        <h2 class="uppercase m-0">Question:</h2>
-        <p class="question-card__text"></p>
-        <button class="question-card__bookmark border-none p-0">
-          <img src="images/bookmark-empty.svg" alt="Bookmark" width="32" height="32" />
-        </button>
-        <button class="button">Show Answer</button>
-        <p class="answer"></p>
-        <p class="flex flex-row flex-wrap justify-evenly">
-          <span class="tag p-3 mx-4">tag1</span> <span class="tag p-3 mx-4">tag2</span>
-          <span class="tag p-3 mx-4">tag3</span>
-          <span class="tag p-3 mx-4">tag4</span>
-        </p>
+      <!-- CREATE QUESTIONS -->
+      <section class="createQuestion hidden" data-js="createQuestion">
+        <form class="form flex flex-col" autocomplete="off">
+          <label class="label" for="add-question">Add Question</label>
+          <textarea
+            class="add-question"
+            data-js="add-question"
+            name=""
+            id="add-question"
+            cols="30"
+            rows="10"
+            placeholder="Please write a question"
+          ></textarea>
+          <output
+            class="form__counter--question"
+            data-js="add-question-counter"
+          ></output>
+          <label class="label" for="add-answer">Add Answer</label>
+          <textarea
+            name=""
+            class="add-answer"
+            id="add-answer"
+            cols="30"
+            rows="10"
+            data-js="add-answer"
+            placeholder="Please write an answer"
+          ></textarea>
+          <output class="textcount" id="textcount"></output>
+          <label for="add-tags" class="label">Add Tags</label>
+          <input type="text" id="add-tags" />
+          <input type="submit" value="Submit" class="button" />
+        </form>
+      </section>
+      <!-- PROFILE  -->
+      <section class="profile hidden" data-js="profile">
+        <section class="section">
+          <figure>
+            <img
+              src="./images/avatar.svg"
+              alt="Profile Picture Avatar"
+              height="100"
+              width="100"
+            />
+          </figure>
+          <p class="name">Name:</p>
+          <p class="">About you:</p>
+          <h2 class="headings">TAGS</h2>
+          <p class="tag">
+            <span class="tag">tag1</span> <span class="tag">tag2</span>
+            <span class="tag">tag3</span>
+            <span class="tag">tag4</span>
+          </p>
+          <button class="button logout">LOGOUT</button>
+        </section>
       </section>
     </main>
     <nav class="p-2 mx-4 flex justify-evenly flex-wrap footer rounded-b-lg">
-      <a href="#" class="footer__link"
-        ><img src="./images/home.svg" alt="Gehe zur Startseite" height="32" width="32"
-      /></a>
-      <a href="pages/bookmarks.html" class="footer__link footer--opacity"
-        ><img src="./images/bookmark-filled.svg" alt="Lesezeichen" width="32" height="32"
-      /></a>
-      <a href="pages/form.html" class="footer__link footer--opacity"
-        ><img src="./images/edit.svg" alt="Frage erstellen" height="32" width="32"
-      /></a>
-      <a href="pages/form.html" class="footer__link footer--opacity">
-        <img src="./images/avatar.svg" alt="zur Profilseite" height="32" width="32" />
-      </a>
+      <button class="footer__button">
+        <img
+          src="./images/home.svg"
+          alt="Gehe zur Startseite"
+          height="32"
+          width="32"
+        />
+      </button>
+      <button class="footer__button footer--opacity">
+        <img
+          src="./images/bookmark-filled.svg"
+          alt="Lesezeichen"
+          width="32"
+          height="32"
+        />
+      </button>
+      <button class="footer__button footer--opacity">
+        <img
+          src="./images/edit.svg"
+          alt="Frage erstellen"
+          height="32"
+          width="32"
+        />
+      </button>
+      <button class="footer__button footer--opacity">
+        <img
+          src="./images/avatar.svg"
+          alt="zur Profilseite"
+          height="32"
+          width="32"
+        />
+      </button>
     </nav>
     <script src="./scripts/main.js"></script>
   </body>

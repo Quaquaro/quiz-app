@@ -12,9 +12,11 @@
     <main class="app-grid__scrollarea m-4">
       <form class="form flex flex-col" autocomplete="off">
         <label class="label" for="add-question">Add Question</label>
-        <textarea name="" id="add-question" cols="30" rows="10"></textarea>
+        <textarea class="add-question" data-js="add-question" name="" id="add-question" cols="30" rows="10" placeholder="Please write a question"></textarea>
+        <output class="form__counter--question"data-js="add-question-counter"></output>
         <label class="label" for="add-answer">Add Answer</label>
-        <textarea name="" id="add-answer" cols="30" rows="10"></textarea>
+        <textarea name="" class="add-answer" id="add-answer" cols="30" rows="10" data-js="add-answer" placeholder="Please write an answer" ></textarea>
+        <output class="textcount" id="textcount"></output>
         <label for="add-tags" class="label">Add Tags</label>
         <input type="text" id="add-tags" />
         <input type="submit" value="Submit" class="button" />
