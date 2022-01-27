@@ -22,3 +22,12 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+textarea {
+  font-size: 112.5%;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
