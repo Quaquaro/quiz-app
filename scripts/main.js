@@ -12,21 +12,18 @@ function getQuerySelectorAllJsData(jsDataValue) {
 
 //Set Bookmark
 
-
 const bookmarks = getQuerySelectorAllJsData('quiz');
 
-bookmarks.forEach((bookmark) => {
-  bookmark.addEventListener('click', () => {
-    
-  });
+bookmarks.forEach(bookmark => {
+  bookmark.addEventListener('click', () => {});
 });
 
-function addBookmark (){
-    if (bookmark.src.includes('bookmark-empty')) {
-      bookmark.src = './images/bookmark-filled.svg';
-    } else {
-      bookmark.src = './images/bookmark-empty.svg';
-    }
+function addBookmark() {
+  if (bookmark.src.includes('bookmark-empty')) {
+    bookmark.src = './images/bookmark-filled.svg';
+  } else {
+    bookmark.src = './images/bookmark-empty.svg';
+  }
 }
 // const bookmark = getQuerySelectorJsData('bookmark');
 
@@ -79,5 +76,4 @@ textareaContentQuestion.addEventListener('keyup', () => {
   if (textlength > 200) {
     textareaContentQuestion.classList.add('form__textarea--red-border');
   }
-
 });
