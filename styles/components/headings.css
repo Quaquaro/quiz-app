@@ -2,4 +2,13 @@
   text-transform: uppercase;
   line-height: 1.2;
   font-family: 'museo700';
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  background-color: var(--color-gray);
+  margin-top: 0;
+  padding-top: 2px;
+  text-align: center;
 }

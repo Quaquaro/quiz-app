@@ -1,6 +1,3 @@
-.header {
-  display: grid;
-  justify-items: center;
-  align-items: center;
+header {
   color: var(--color-blue-jeans);
 }

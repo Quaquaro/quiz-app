@@ -4,5 +4,6 @@
 }
 
 .app-grid__scrollarea {
-  overflow-y: auto;
+  overflow-y: scroll;
+  overflow: hidden;
 }
