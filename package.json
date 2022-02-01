@@ -1,10 +1,13 @@
 {
   "name": "quiz-app",
   "version": "1.0.0",
-  "description": "- HTML - CSS",
+  "description": "- HTML - CSS - JS",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "npm run htmlhint && npm run prettier:check && npm run eslint:check",
+    "test:watch": "NODE_OPTIONS=--experimental-vm-modules npx jest --watch",
+    "test:jest":"NODE_OPTIONS=--experimental-vm-modules npx jest",
     "prettier:check": "npx prettier --check .",
     "prettier:write": "npx prettier --write .",
     "htmlhint": "npx htmlhint '**/*.html'",
@@ -36,6 +39,7 @@
     "eslint-config-prettier": "^8.3.0",
     "htmlhint": "^1.1.1",
     "husky": "^7.0.0",
+    "jest": "^27.4.7",
     "lint-staged": "^12.3.2",
     "prettier": "2.5.1"
   },

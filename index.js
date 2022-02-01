@@ -1,6 +1,6 @@
-import Card from './scripts/Card.js';
-import Form from './scripts/Form.js';
-import Switch from './scripts/Switch.js';
+import Card from './components/Card.js';
+import Form from './components/Form.js';
+import Switch from './components/Switch.js';
 const allCards = document.querySelectorAll('[data-js="card"]');
 
 allCards.forEach(cardElement => {
