@@ -4,7 +4,7 @@ export default function Form(formElement) {
   const counterElement = formElement.querySelector('.textcount');
 
   textarea.addEventListener('input', () => {
-    let textlength = textarea.value.length;
+    const textlength = textarea.value.length;
     counterElement.value = textlength + ' of 200';
     textarea.classList.remove('form__textarea--red-border');
     if (textlength > 200) {

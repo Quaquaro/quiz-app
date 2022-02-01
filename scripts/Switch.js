@@ -17,7 +17,6 @@ export default function Switch() {
       const currentButton = document.querySelector(
         `[data-nav="${buttonAttribute}"]`
       );
-      console.log(currentButton);
       const heading = document.querySelector('h1');
       currentPage.classList.remove('hidden');
       currentButton.classList.remove('footer--opacity');
