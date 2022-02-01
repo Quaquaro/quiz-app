@@ -7,7 +7,7 @@
   "scripts": {
     "test": "npm run htmlhint && npm run prettier:check && npm run eslint:check",
     "test:watch": "NODE_OPTIONS=--experimental-vm-modules npx jest --watch",
-    "test:jest":"NODE_OPTIONS=--experimental-vm-modules npx jest",
+    "test:jest": "NODE_OPTIONS=--experimental-vm-modules npx jest",
     "prettier:check": "npx prettier --check .",
     "prettier:write": "npx prettier --write .",
     "htmlhint": "npx htmlhint '**/*.html'",
