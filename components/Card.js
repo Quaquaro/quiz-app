@@ -1,4 +1,4 @@
-export default function Card(cardElement) {
+export default async function Card(cardElement) {
   const bookmarkIcon = getQuerySelector('bookmark');
   const bookmarkButton = getQuerySelector('bookmarkButton');
   const questionText = getQuerySelector('question');
@@ -11,12 +11,12 @@ export default function Card(cardElement) {
   const answerText = getQuerySelector('answer-Text');
   const answerButton = getQuerySelector('answer-button');
 
-  fetch(
+  const response = await fetch(
     'https://opentdb.com/api.php?amount=3&category=9&difficulty=medium&type=multiple'
-  )
-    .then(response => response.json())
-    .then(data => createQuestions(data.results))
-    .catch(error => console.error(error));
+  ).catch(error => console.error(error));
+  const data = await response.json();
+
+  createQuestions(data.results);
 
   function createQuestions(questions) {
     questions.forEach(question => {
